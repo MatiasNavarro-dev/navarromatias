@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Matías Navarro — Desarrollador de productos web</title>
+  <meta name="description" content="Matías Navarro diseña y desarrolla productos web completos: SaaS, pagos con Mercado Pago, ecommerce e IA. Mirá Turno+ y Tienda Creativa funcionando en producción." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="glow"></div>
+  <div class="grain"></div>
+
+  <header class="nav" id="nav">
+    <a class="mark" href="#inicio">MN<span>.</span></a>
+    <nav>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#hago">Qué hago</a>
+      <a href="#contacto" class="nav-cta">Contratame</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+
+      <!-- FOTO: pegá el link de tu imagen en data-src (puede ser una URL o una ruta como img/yo.jpg) -->
+      <div class="avatar reveal" id="avatar" data-src="https://media.licdn.com/dms/image/v2/D4D03AQHbzk9te6D5oQ/profile-displayphoto-scale_200_200/B4DZoh0IggK0Ac-/0/1761503906804?e=1792627200&v=beta&t=gq6tICfnTnFbeg8SPmcXoBEXJpWT2Zx2qFsnystoNY4">
+        <span class="avatar-fallback">MN</span>
+      </div>
+
+      <p class="badge reveal"><i></i> Disponible para nuevos proyectos</p>
+      <h1 class="reveal">
+        Construyo productos<br />
+        web que <span class="rotator"><span id="word">venden</span></span>
+      </h1>
+      <p class="lede reveal">
+        Soy Matías Navarro. Llevo ideas a producción de punta a punta: diseño, backend,
+        pagos con Mercado Pago e inteligencia artificial. Mis productos ya los usan negocios reales.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary magnetic" href="#contacto">Trabajemos juntos <b>→</b></a>
+        <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+      </div>
+
+      <div class="stats reveal">
+        <div><strong data-count="2">0</strong><span>productos SaaS en vivo</span></div>
+        <div><strong data-count="24" data-suffix="/7">0</strong><span>asistente IA atendiendo</span></div>
+        <div><strong data-count="100" data-suffix="%">0</strong><span>desarrollo propio</span></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Mercado Pago</span><span>Reservas online</span><span>Ecommerce</span><span>Inteligencia artificial</span><span>Paneles de gestión</span><span>Dominios propios</span><span>Recordatorios automáticos</span>
+        <span>Mercado Pago</span><span>Reservas online</span><span>Ecommerce</span><span>Inteligencia artificial</span><span>Paneles de gestión</span><span>Dominios propios</span><span>Recordatorios automáticos</span>
+      </div>
+    </div>
+
+    <section id="proyectos" class="section">
+      <header class="section-head reveal">
+        <p class="eyebrow">01 — Trabajo seleccionado</p>
+        <h2>Productos reales, con clientes reales.</h2>
+      </header>
+
+      <article class="card card-turno reveal tilt">
+        <div class="card-copy">
+          <p class="kicker">SaaS · Reservas y pagos</p>
+          <h3>Turno+</h3>
+          <p>
+            Plataforma de turnos online para peluquerías, estéticas y consultorios. Cada negocio
+            recibe su propia web de reservas, cobra señas con Mercado Pago y reduce las
+            inasistencias con recordatorios automáticos.
+          </p>
+          <ul class="chips">
+            <li>Agenda multi-profesional</li>
+            <li>Mercado Pago</li>
+            <li>Asistente IA 24/7</li>
+            <li>Dominio propio</li>
+          </ul>
+          <p class="result"><b>Resultado:</b> un negocio empieza a recibir turnos en menos de 30 segundos de registro.</p>
+          <a class="btn btn-primary" href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">Visitar turnoplus.app <b>↗</b></a>
+        </div>
+        <a class="shot" href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">
+          <div class="shot-bar"><span></span><span></span><span></span><em>turnoplus.app</em></div>
+          <img src="img/turnoplus.png" alt="Captura de la página de inicio de Turno+" loading="lazy" />
+        </a>
+      </article>
+
+      <article class="card card-tienda reveal tilt">
+        <a class="shot" href="https://tiendacreativa.app" target="_blank" rel="noopener noreferrer">
+          <div class="shot-bar"><span></span><span></span><span></span><em>tiendacreativa.app</em></div>
+          <img src="img/tiendacreativa.png" alt="Captura de la página de inicio de Tienda Creativa" loading="lazy" />
+        </a>
+        <div class="card-copy">
+          <p class="kicker">Ecommerce · Personalización</p>
+          <h3>Tienda Creativa</h3>
+          <p>
+            Plataforma para crear tiendas de indumentaria personalizada. El cliente sube su
+            diseño, lo ve en tiempo real sobre la prenda y compra; el dueño recibe el pedido
+            listo para producir, sin mínimos.
+          </p>
+          <ul class="chips">
+            <li>Editor en tiempo real</li>
+            <li>Catálogo y talles</li>
+            <li>Pedidos y envíos</li>
+            <li>Subdominio propio</li>
+          </ul>
+          <p class="result"><b>Resultado:</b> una tienda lista para vender, de la prenda al envío, en un solo panel.</p>
+          <a class="btn btn-green" href="https://tiendacreativa.app" target="_blank" rel="noopener noreferrer">Visitar tiendacreativa.app <b>↗</b></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="hago" class="section">
+      <header class="section-head reveal">
+        <p class="eyebrow">02 — Qué puedo hacer por vos</p>
+        <h2>Una sola persona, el producto completo.</h2>
+      </header>
+      <div class="grid">
+        <div class="tile reveal"><em>01</em><h4>Producto de punta a punta</h4><p>De la idea al sitio funcionando: interfaz, lógica, base de datos y despliegue.</p></div>
+        <div class="tile reveal"><em>02</em><h4>Cobros integrados</h4><p>Pagos y señas con Mercado Pago, planes por suscripción y gestión de cupones.</p></div>
+        <div class="tile reveal"><em>03</em><h4>IA que trabaja por vos</h4><p>Asistentes que atienden, agendan y reprograman automáticamente en tu web.</p></div>
+        <div class="tile reveal"><em>04</em><h4>Pensado para vender</h4><p>Velocidad, diseño cuidado y flujos simples para que tus clientes conviertan.</p></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact reveal">
+      <div class="orb orb-c"></div>
+      <p class="eyebrow">03 — Contacto</p>
+      <h2>¿Tenés una idea o un negocio que necesita su plataforma?</h2>
+      <p class="lede">Contame qué querés lograr y te respondo con un plan claro, tiempos y presupuesto.</p>
+      <a class="btn btn-primary btn-big magnetic" href="mailto:TU-EMAIL@ejemplo.com?subject=Quiero%20trabajar%20con%20vos">Escribime ahora <b>→</b></a>
+      <div class="links">
+        <a href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">turnoplus.app</a>
+        <a href="https://tiendacreativa.app" target="_blank" rel="noopener noreferrer">tiendacreativa.app</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Matías Navarro</span>
+    <span>Hecho en Argentina</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
