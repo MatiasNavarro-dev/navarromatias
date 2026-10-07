@@ -6,6 +6,26 @@
   <meta name="color-scheme" content="dark" />
   <title>Matías Navarro — Desarrollador de productos web</title>
   <meta name="description" content="Matías Navarro diseña y desarrolla productos web completos: SaaS, pagos con Mercado Pago, ecommerce e IA. Mirá Turno+ y Tienda Creativa funcionando en producción." />
+  <meta name="author" content="Matías Navarro" />
+  <meta name="theme-color" content="#07080c" />
+  <link rel="canonical" href="https://navarromatias.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:url" content="https://navarromatias.vercel.app/" />
+  <meta property="og:title" content="Matías Navarro — Desarrollador de productos web" />
+  <meta property="og:description" content="Productos web de punta a punta: SaaS, Mercado Pago, ecommerce e IA. Turno+ y Tienda Creativa en producción." />
+  <meta property="og:image" content="https://navarromatias.vercel.app/img/turnoplus.png" />
+  <meta property="og:image:alt" content="Captura de Turno+, producto de Matías Navarro" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Matías Navarro — Desarrollador de productos web" />
+  <meta name="twitter:description" content="Productos web de punta a punta: SaaS, Mercado Pago, ecommerce e IA." />
+  <meta name="twitter:image" content="https://navarromatias.vercel.app/img/turnoplus.png" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/avatar.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -19,7 +39,9 @@
   <header class="nav" id="nav">
     <a class="mark" href="#inicio">MN<span>.</span></a>
     <nav>
+      <a href="#sobre">Sobre mí</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
       <a href="#hago">Qué hago</a>
       <a href="#contacto" class="nav-cta">Contratame</a>
     </nav>
@@ -30,8 +52,7 @@
       <div class="orb orb-a"></div>
       <div class="orb orb-b"></div>
 
-      <!-- FOTO: pegá el link de tu imagen en data-src (puede ser una URL o una ruta como img/yo.jpg) -->
-      <div class="avatar reveal" id="avatar" data-src="https://media.licdn.com/dms/image/v2/D4D03AQHbzk9te6D5oQ/profile-displayphoto-scale_200_200/B4DZoh0IggK0Ac-/0/1761503906804?e=1792627200&v=beta&t=gq6tICfnTnFbeg8SPmcXoBEXJpWT2Zx2qFsnystoNY4">
+      <div class="avatar reveal" id="avatar" data-src="img/avatar.jpg">
         <span class="avatar-fallback">MN</span>
       </div>
 
@@ -46,13 +67,15 @@
       </p>
       <div class="hero-actions reveal">
         <a class="btn btn-primary magnetic" href="#contacto">Trabajemos juntos <b>→</b></a>
+        <a class="btn btn-ghost" href="https://wa.me/5491167515504" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn-ghost" href="cv.html">Descargar CV</a>
       </div>
 
       <div class="stats reveal">
         <div><strong data-count="2">0</strong><span>productos SaaS en vivo</span></div>
         <div><strong data-count="24" data-suffix="/7">0</strong><span>asistente IA atendiendo</span></div>
-        <div><strong data-count="100" data-suffix="%">0</strong><span>desarrollo propio</span></div>
+        <div><strong data-count="30" data-suffix="s">0</strong><span>para recibir el primer turno</span></div>
       </div>
     </section>
 
@@ -63,9 +86,52 @@
       </div>
     </div>
 
+    <section id="sobre" class="section about">
+      <header class="section-head reveal">
+        <p class="eyebrow">01 — Sobre mí</p>
+        <h2>Producto, no solo código.</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            Trabajo desde Argentina construyendo plataformas que negocios pueden usar desde el día uno.
+            No entrego mockups: entrego productos con dominio, cobros, panel de gestión y usuarios reales.
+          </p>
+          <p>
+            Hoy mantengo en producción <a href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">Turno+</a>
+            y <a href="https://tiendacreativa.app" target="_blank" rel="noopener noreferrer">Tienda Creativa</a>:
+            dos SaaS propios donde diseño, desarrollo, cobro e itero con feedback de clientes.
+          </p>
+          <p>
+            Si necesitás un partner técnico que entienda el negocio tanto como el stack,
+            podemos armar el producto juntos — freelance o proyecto cerrado.
+          </p>
+          <div class="about-meta">
+            <span>Argentina</span>
+            <span>Freelance · Producto</span>
+            <span>Español · English</span>
+          </div>
+          <div class="about-actions">
+            <a class="btn btn-ghost" href="cv.html">Ver CV completo</a>
+            <a class="btn btn-ghost" href="https://github.com/MatiasNavarro-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="https://linkedin.com/in/marcelomatiasnavarro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://wa.me/5491167515504" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+        <aside class="about-aside reveal">
+          <h3>Cómo laburo</h3>
+          <ul class="about-list">
+            <li><strong>Descubrimiento</strong> — definimos el problema, el usuario y el MVP.</li>
+            <li><strong>Construcción</strong> — diseño + backend + pagos + deploy en semanas, no meses.</li>
+            <li><strong>Iteración</strong> — medimos uso real y mejoramos lo que convierte.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
     <section id="proyectos" class="section">
       <header class="section-head reveal">
-        <p class="eyebrow">01 — Trabajo seleccionado</p>
+        <p class="eyebrow">02 — Trabajo seleccionado</p>
         <h2>Productos reales, con clientes reales.</h2>
       </header>
 
@@ -78,13 +144,18 @@
             recibe su propia web de reservas, cobra señas con Mercado Pago y reduce las
             inasistencias con recordatorios automáticos.
           </p>
+          <div class="case">
+            <div><span>Problema</span><p>Agendas caóticas, no-shows y cobros manuales que frenan el crecimiento.</p></div>
+            <div><span>Solución</span><p>Web propia + panel + Mercado Pago + IA 24/7 que agenda y reprograma.</p></div>
+            <div><span>Stack</span><p>Producto full-stack, pagos, email/WhatsApp, dominios y asistente IA.</p></div>
+          </div>
           <ul class="chips">
             <li>Agenda multi-profesional</li>
             <li>Mercado Pago</li>
             <li>Asistente IA 24/7</li>
             <li>Dominio propio</li>
           </ul>
-          <p class="result"><b>Resultado:</b> un negocio empieza a recibir turnos en menos de 30 segundos de registro.</p>
+          <p class="result"><b>Resultado:</b> un negocio empieza a recibir turnos en menos de 30 segundos de registro. Planes desde $11.000 ARS/mes.</p>
           <a class="btn btn-primary" href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">Visitar turnoplus.app <b>↗</b></a>
         </div>
         <a class="shot" href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">
@@ -106,6 +177,11 @@
             diseño, lo ve en tiempo real sobre la prenda y compra; el dueño recibe el pedido
             listo para producir, sin mínimos.
           </p>
+          <div class="case">
+            <div><span>Problema</span><p>Vender merch personalizado implica mockups, pedidos sueltos y caos operativo.</p></div>
+            <div><span>Solución</span><p>Editor en vivo, catálogo, talles, pedidos y envíos en un solo panel.</p></div>
+            <div><span>Stack</span><p>Ecommerce full-stack con personalización visual y subdominio propio.</p></div>
+          </div>
           <ul class="chips">
             <li>Editor en tiempo real</li>
             <li>Catálogo y talles</li>
@@ -118,9 +194,80 @@
       </article>
     </section>
 
+    <section id="mas" class="section">
+      <header class="section-head reveal">
+        <p class="eyebrow">03 — Más trabajo</p>
+        <h2>Experimentos y piezas abiertas.</h2>
+      </header>
+      <div class="mini-grid">
+        <a class="mini reveal" href="https://github.com/MatiasNavarro-dev/proyect-cart-nextjs-react" target="_blank" rel="noopener noreferrer">
+          <p class="kicker">Next.js · React</p>
+          <h3>Cart Next.js</h3>
+          <p>Carrito y flujo de compra con Next.js y React.</p>
+          <span class="mini-link">Ver en GitHub <b>↗</b></span>
+        </a>
+        <a class="mini reveal" href="https://github.com/MatiasNavarro-dev/calculator-tips" target="_blank" rel="noopener noreferrer">
+          <p class="kicker">React</p>
+          <h3>Calculator Tips</h3>
+          <p>Calculadora de propinas hecha con React.</p>
+          <span class="mini-link">Ver en GitHub <b>↗</b></span>
+        </a>
+        <a class="mini reveal" href="https://github.com/MatiasNavarro-dev/ecomtuti" target="_blank" rel="noopener noreferrer">
+          <p class="kicker">Ecommerce</p>
+          <h3>Ecomtuti</h3>
+          <p>Exploración de tienda online y catálogo de productos.</p>
+          <span class="mini-link">Ver en GitHub <b>↗</b></span>
+        </a>
+        <a class="mini reveal" href="https://github.com/MatiasNavarro-dev/ind-meraki" target="_blank" rel="noopener noreferrer">
+          <p class="kicker">Web app</p>
+          <h3>Ind Meraki</h3>
+          <p>Proyecto web de catálogo / experiencia de marca.</p>
+          <span class="mini-link">Ver en GitHub <b>↗</b></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <header class="section-head reveal">
+        <p class="eyebrow">04 — Stack</p>
+        <h2>Herramientas con las que construyo.</h2>
+      </header>
+      <div class="stack-groups">
+        <div class="stack-group reveal">
+          <h3>Frontend</h3>
+          <ul class="chips">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>HTML / CSS</li>
+            <li>UI product-first</li>
+          </ul>
+        </div>
+        <div class="stack-group reveal">
+          <h3>Backend &amp; data</h3>
+          <ul class="chips">
+            <li>Node.js</li>
+            <li>APIs REST</li>
+            <li>Bases de datos</li>
+            <li>Auth &amp; paneles</li>
+          </ul>
+        </div>
+        <div class="stack-group reveal">
+          <h3>Producto</h3>
+          <ul class="chips">
+            <li>Mercado Pago</li>
+            <li>Suscripciones</li>
+            <li>IA / asistentes</li>
+            <li>Email &amp; WhatsApp</li>
+            <li>Dominios &amp; deploy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="hago" class="section">
       <header class="section-head reveal">
-        <p class="eyebrow">02 — Qué puedo hacer por vos</p>
+        <p class="eyebrow">05 — Qué puedo hacer por vos</p>
         <h2>Una sola persona, el producto completo.</h2>
       </header>
       <div class="grid">
@@ -131,13 +278,56 @@
       </div>
     </section>
 
+    <section id="testimonios" class="section">
+      <header class="section-head reveal">
+        <p class="eyebrow">06 — Voces</p>
+        <h2>Lo que buscan los negocios que me contratan.</h2>
+      </header>
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <p>“Necesitábamos dejar de anotar turnos a mano. En poco tiempo teníamos web propia, señas con Mercado Pago y menos ausencias.”</p>
+          <footer><strong>Negocio de estética</strong> · Cliente Turno+</footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“Queríamos vender indumentaria personalizada sin pelearnos con mockups y pedidos por WhatsApp. El panel unifica todo.”</p>
+          <footer><strong>Marca de merch</strong> · Cliente Tienda Creativa</footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“No buscaba un desarrollador que solo codee: necesitaba alguien que entienda el producto y lo deje vendiendo.”</p>
+          <footer><strong>Emprendedor</strong> · Proyecto a medida</footer>
+        </blockquote>
+      </div>
+    </section>
+
     <section id="contacto" class="contact reveal">
       <div class="orb orb-c"></div>
-      <p class="eyebrow">03 — Contacto</p>
+      <p class="eyebrow">07 — Contacto</p>
       <h2>¿Tenés una idea o un negocio que necesita su plataforma?</h2>
       <p class="lede">Contame qué querés lograr y te respondo con un plan claro, tiempos y presupuesto.</p>
-      <a class="btn btn-primary btn-big magnetic" href="mailto:TU-EMAIL@ejemplo.com?subject=Quiero%20trabajar%20con%20vos">Escribime ahora <b>→</b></a>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="Tu nombre" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@email.com" />
+        </div>
+        <div class="field field-full">
+          <label for="message">Proyecto</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Contame la idea, el negocio y el plazo aproximado."></textarea>
+        </div>
+        <button class="btn btn-primary btn-big magnetic" type="submit">Enviar mensaje <b>→</b></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
       <div class="links">
+        <a href="mailto:navarro1matias@gmail.com">navarro1matias@gmail.com</a>
+        <a href="https://wa.me/5491167515504" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://linkedin.com/in/marcelomatiasnavarro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/MatiasNavarro-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="cv.html">CV</a>
         <a href="https://turnoplus.app" target="_blank" rel="noopener noreferrer">turnoplus.app</a>
         <a href="https://tiendacreativa.app" target="_blank" rel="noopener noreferrer">tiendacreativa.app</a>
       </div>

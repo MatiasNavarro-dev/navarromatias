@@ -1,6 +1,8 @@
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 
+const CONTACT_EMAIL = 'navarro1matias@gmail.com';
+
 // Reveal on scroll
 const io = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
@@ -34,14 +36,16 @@ function countUp(el) {
 const words = ['venden', 'cobran', 'escalan', 'automatizan'];
 const wordEl = $('#word');
 let wi = 0;
-setInterval(() => {
-  wordEl.classList.add('out');
-  setTimeout(() => {
-    wi = (wi + 1) % words.length;
-    wordEl.textContent = words[wi];
-    wordEl.classList.remove('out');
-  }, 450);
-}, 2400);
+if (wordEl) {
+  setInterval(() => {
+    wordEl.classList.add('out');
+    setTimeout(() => {
+      wi = (wi + 1) % words.length;
+      wordEl.textContent = words[wi];
+      wordEl.classList.remove('out');
+    }, 450);
+  }, 2400);
+}
 
 // Nav + progress bar
 const nav = $('#nav');
@@ -54,10 +58,12 @@ addEventListener('scroll', () => {
 
 // Cursor glow
 const glow = $('#glow');
-addEventListener('pointermove', (e) => {
-  glow.style.left = e.clientX + 'px';
-  glow.style.top = e.clientY + 'px';
-}, { passive: true });
+if (glow) {
+  addEventListener('pointermove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  }, { passive: true });
+}
 
 // 3D tilt + spotlight on cards
 $$('.tilt').forEach((card) => {
@@ -83,11 +89,45 @@ $$('.magnetic').forEach((btn) => {
   btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
 });
 
-// Foto circular: toma el link de data-src en #avatar
+// Foto circular local
 const avatar = $('#avatar');
 if (avatar && avatar.dataset.src) {
   const img = new Image();
   img.alt = 'Foto de Matías Navarro';
   img.onload = () => { avatar.innerHTML = ''; avatar.appendChild(img); };
+  img.onerror = () => { /* deja el fallback MN */ };
   img.src = avatar.dataset.src;
+}
+
+// Formulario de contacto ? mailto
+const form = $('#contact-form');
+const status = $('#form-status');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      status.textContent = 'Completá todos los campos.';
+      status.classList.add('error');
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      status.textContent = 'Revisá el email: parece inválido.';
+      status.classList.add('error');
+      return;
+    }
+
+    status.classList.remove('error');
+    status.textContent = 'Abriendo tu cliente de correo…';
+
+    const subject = encodeURIComponent(`Consulta desde el portfolio — ${name}`);
+    const body = encodeURIComponent(
+      `Hola Matías,\n\n${message}\n\n— ${name}\n${email}`
+    );
+    location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+  });
 }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>CV — Matías Navarro</title>
+  <meta name="description" content="Curriculum de Matías Navarro: desarrollador de productos web, SaaS, Mercado Pago e IA." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #07080c;
+      --ink: #f2f4f8;
+      --muted: #8b93a7;
+      --line: rgba(255, 255, 255, 0.12);
+      --blue: #4c63ff;
+      --green: #19d68f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: "Bricolage Grotesque", system-ui, sans-serif;
+      line-height: 1.5; padding: 2rem 1.2rem 4rem;
+    }
+    .wrap { max-width: 800px; margin: 0 auto; }
+    .bar {
+      display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: space-between;
+      align-items: center; margin-bottom: 2rem;
+    }
+    .bar a, .bar button {
+      font: inherit; cursor: pointer; text-decoration: none; color: var(--ink);
+      padding: 0.65rem 1.1rem; border-radius: 999px; border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .bar .print {
+      background: linear-gradient(120deg, var(--blue), #9b5cff); border: none; color: #fff;
+    }
+    header { display: flex; gap: 1.2rem; align-items: center; margin-bottom: 2rem; }
+    header img {
+      width: 88px; height: 88px; border-radius: 50%; object-fit: cover;
+      border: 2px solid var(--line);
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.04em; line-height: 1; }
+    .role { margin: 0.5rem 0 0; color: var(--muted); font-size: 1.1rem; }
+    .contact-row {
+      display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; margin-top: 0.9rem;
+      font-family: "JetBrains Mono", monospace; font-size: 0.82rem;
+    }
+    .contact-row a { color: var(--green); text-decoration: none; }
+    section { margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+    h2 {
+      margin: 0 0 1rem; font-size: 0.85rem; letter-spacing: 0.1em;
+      text-transform: uppercase; font-family: "JetBrains Mono", monospace; color: var(--green);
+    }
+    p { color: #c5cce0; margin: 0 0 0.8rem; }
+    .job { margin-bottom: 1.3rem; }
+    .job h3 { margin: 0 0 0.25rem; font-size: 1.25rem; letter-spacing: -0.03em; }
+    .job .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+    ul { margin: 0; padding-left: 1.1rem; color: #c5cce0; }
+    li { margin-bottom: 0.35rem; }
+    .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 0.45rem; padding: 0; }
+    .chips li {
+      padding: 0.3rem 0.7rem; border-radius: 999px; border: 1px solid var(--line);
+      font-size: 0.85rem; color: #dfe4f2;
+    }
+    @media print {
+      body { background: #fff; color: #111; padding: 0; }
+      .bar { display: none; }
+      p, ul, .job .meta, .role { color: #333; }
+      .contact-row a { color: #0a6; }
+      h2 { color: #0a6; }
+      section { border-color: #ddd; }
+      header img { border-color: #ccc; }
+      .chips li { border-color: #ccc; color: #222; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar">
+      <a href="index.html">← Volver al portfolio</a>
+      <button class="print" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
+    </div>
+
+    <header>
+      <img src="img/avatar.jpg" alt="Matías Navarro" />
+      <div>
+        <h1>Matías Navarro</h1>
+        <p class="role">Desarrollador de productos web · SaaS, pagos e IA</p>
+        <div class="contact-row">
+          <a href="mailto:navarro1matias@gmail.com">navarro1matias@gmail.com</a>
+          <a href="https://wa.me/5491167515504" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://linkedin.com/in/marcelomatiasnavarro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/MatiasNavarro-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://navarromatias.vercel.app" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          <span>Argentina</span>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Perfil</h2>
+      <p>
+        Construyo productos web de punta a punta: interfaz, backend, cobros con Mercado Pago
+        e inteligencia artificial. Mantengo en producción dos SaaS propios usados por negocios reales.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experiencia / Productos</h2>
+      <div class="job">
+        <h3>Turno+ — Fundador &amp; desarrollador</h3>
+        <p class="meta">SaaS de reservas · <a href="https://turnoplus.app">turnoplus.app</a> · En producción</p>
+        <ul>
+          <li>Plataforma de turnos con web propia por negocio, agenda multi-profesional y panel de gestión.</li>
+          <li>Integración de señas y cobros con Mercado Pago, cupones y recordatorios automáticos.</li>
+          <li>Asistente IA 24/7 que atiende, agenda y reprograma turnos en el chat del sitio.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Tienda Creativa — Fundador &amp; desarrollador</h3>
+        <p class="meta">Ecommerce de indumentaria personalizada · <a href="https://tiendacreativa.app">tiendacreativa.app</a> · En producción</p>
+        <ul>
+          <li>Editor en tiempo real para visualizar diseños sobre prendas.</li>
+          <li>Catálogo, talles, pedidos y envíos en un único panel operativo.</li>
+          <li>Tiendas con subdominio propio listas para vender sin mínimos de producción.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Proyectos open source / exploración</h3>
+        <p class="meta">GitHub · React · Next.js</p>
+        <ul>
+          <li>Cart Next.js, Calculator Tips, Ecomtuti e Ind Meraki — piezas de ecommerce y UI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Stack</h2>
+      <ul class="chips">
+        <li>React</li>
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Node.js</li>
+        <li>APIs REST</li>
+        <li>Mercado Pago</li>
+        <li>IA / asistentes</li>
+        <li>HTML / CSS</li>
+        <li>Deploy &amp; dominios</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Servicios</h2>
+      <ul>
+        <li>Producto web end-to-end (MVP → producción)</li>
+        <li>Integraciones de pago y suscripciones</li>
+        <li>Asistentes de IA orientados a conversión y soporte</li>
+        <li>Ecommerce y paneles de gestión a medida</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
